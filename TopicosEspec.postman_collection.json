@@ -1,0 +1,521 @@
+{
+	"info": {
+		"_postman_id": "f5a06f73-4044-4dc9-9ad9-c6e4096a94ac",
+		"name": "TopicosEspec",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3003/api/user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nome\": \"Jean\",\n\t\"email\": \"jeanlucafp@\",\n\t\"senha\": \"12345\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3003/api/user",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3003/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"jeanlucafp@\",\n\t\"senha\": \"12345\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3003/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3003/api/user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "5da72f9d3a1ce671dfb8e0cb",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3003/api/user",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3003/api/user/5da72f9d3a1ce671dfb8e0cb",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3003/api/user/5da72f9d3a1ce671dfb8e0cb",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"user",
+						"5da72f9d3a1ce671dfb8e0cb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3003/api/user/5da72f9d3a1ce671dfb8e0cb",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "5da72f9d3a1ce671dfb8e0cb",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3003/api/user/5da72f9d3a1ce671dfb8e0cb",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"user",
+						"5da72f9d3a1ce671dfb8e0cb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3003/api/user/5da72f9d3a1ce671dfb8e0cb",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nome\": \"Augusto\",\n\t\"email\": \"jeanlucafp@\",\n\t\"senha\": \"12345\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3003/api/user/5da72f9d3a1ce671dfb8e0cb",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"user",
+						"5da72f9d3a1ce671dfb8e0cb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3003/api/cartao-credito",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "5da72f9d3a1ce671dfb8e0cb",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nome\": \"agustinho\",\n\t\"numero\": \"12345\",\n\t\"vencimento\": \"02/10\",\n\t\"cvv\": \"666\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3003/api/cartao-credito",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"cartao-credito"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3003/api/cartao-credito",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "5da72f9d3a1ce671dfb8e0cb",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3003/api/cartao-credito",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"cartao-credito"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3003/api/cartao-credito/5da74b854ac1411743f8a586",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "5da72f9d3a1ce671dfb8e0cb",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3003/api/cartao-credito/5da74b854ac1411743f8a586",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"cartao-credito",
+						"5da74b854ac1411743f8a586"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3003/api/cartao-credito/5da74b854ac1411743f8a586",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "5da72f9d3a1ce671dfb8e0cb",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nome\": \"jorginho\",\n\t\"numero\": \"12345\",\n\t\"vencimento\": \"02/10\",\n\t\"cvv\": \"666\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3003/api/cartao-credito/5da74b854ac1411743f8a586",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"cartao-credito",
+						"5da74b854ac1411743f8a586"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3003/api/cartao-credito/5da74b854ac1411743f8a586",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "5da72f9d3a1ce671dfb8e0cb",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3003/api/cartao-credito/5da74b854ac1411743f8a586",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"cartao-credito",
+						"5da74b854ac1411743f8a586"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3003/api/conta-bancaria",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "5da74c97057d4c1b1f74d87c",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nome\": \"agustinho\",\n\t\"banco\": \"itau\",\n\t\"cc\": \"02599-9\",\n\t\"agencia\": \"0648\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3003/api/conta-bancaria",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"conta-bancaria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3003/api/conta-bancaria",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "5da74c97057d4c1b1f74d87c",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3003/api/conta-bancaria",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"conta-bancaria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3003/api/conta-bancaria/5da74cf9057d4c1b1f74d880",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "5da74c97057d4c1b1f74d87c",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3003/api/conta-bancaria/5da74cf9057d4c1b1f74d880",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"conta-bancaria",
+						"5da74cf9057d4c1b1f74d880"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3003/api/conta-bancaria/5da74cf9057d4c1b1f74d880",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "5da74c97057d4c1b1f74d87c",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nome\": \"agustinho\",\n\t\"banco\": \"banco do brasil\",\n\t\"cc\": \"02599-9\",\n\t\"agencia\": \"0648\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3003/api/conta-bancaria/5da74cf9057d4c1b1f74d880",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"conta-bancaria",
+						"5da74cf9057d4c1b1f74d880"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3003/api/conta-bancaria/5da74cf9057d4c1b1f74d880",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "5da74c97057d4c1b1f74d87c",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3003/api/conta-bancaria/5da74cf9057d4c1b1f74d880",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"conta-bancaria",
+						"5da74cf9057d4c1b1f74d880"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
